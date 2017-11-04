@@ -63,27 +63,26 @@ body {
           align-items: center; }
           .banner nav ul li.active > a * {
             margin: 0 5px; }
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .intro .wrapper {
-    color: #fff;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    margin-top: 40px; }
-    .intro .wrapper img {
-      max-width: 100%; }
-  .intro .download-buttons {
-    text-align: center;
-    margin: 5% 0; }
-    .intro .download-buttons img {
-      width: 30%; }
-  .intro .arrow-down {
-    color: #fff;
-    font-size: 3em; }
+  .banner .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .banner .intro .wrapper {
+      color: #fff;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      margin-top: 40px; }
+      .banner .intro .wrapper img {
+        max-width: 100%; }
+    .banner .intro .download-buttons {
+      text-align: center;
+      margin: 5% 0; }
+      .banner .intro .download-buttons img {
+        width: 30%; }
+    .banner .intro .arrow-down {
+      color: #fff;
+      font-size: 3em; }
 
 .footer {
   display: flex;

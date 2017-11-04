@@ -1,0 +1,12 @@
+@mixin buttons-nav($border,$radius) {
+    border: $border solid $white;
+    border-radius: $radius;
+    padding: 8px;
+    height: 40px;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        background-color: $bg-button;
+        border-radius: 8px;
+    }
+}

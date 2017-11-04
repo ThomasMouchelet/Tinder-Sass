@@ -1,0 +1,29 @@
+// Footer
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .footer_column{
+        text-align: center;
+        width: calc(100%/5);
+
+        h3{
+            color: $pink;
+        }
+
+        ul {
+            padding: 0;
+
+            li{
+                list-style: none;
+                padding: 5px 0;
+
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}

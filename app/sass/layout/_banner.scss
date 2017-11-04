@@ -1,0 +1,105 @@
+// Banner
+.banner{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+
+    video{
+        position: absolute;
+        z-index: -1;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        margin: 0;
+        font-size: 1em;
+        
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+
+        &>a{
+            @include buttons-nav(2px, 8px); 
+        }
+        ul{
+            @include buttons-nav(2px, 8px);
+            margin: 0;
+            padding: 0;
+            margin-left: 10px;
+
+            &:hover li:not(.active){
+                opacity: 1;
+                text-align: right;
+            }
+
+            li{
+                list-style: none;
+                overflow: hidden;
+                padding: 5px;
+
+                img{
+                    width: 20%;
+                }
+                &:not(.active){
+                    opacity: 0;
+
+                    &:hover a{
+                        color: $gray;
+                    }
+                }
+                &.active>a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & *{
+                        margin: 0 5px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // Intro
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper{
+            color: $white;
+            text-align: center;
+            font-family: $primaryFont;
+            margin-top: 40px;
+
+            img{
+                max-width: 100%;
+            }
+            
+        }
+        .download-buttons {
+            text-align: center;
+            margin: 5% 0;
+
+            img{
+                width: 30%;
+            }
+        }
+
+        .arrow-down{
+            color: $white;
+            font-size: 3em;
+        }
+        
+            
+    }
+}
+
