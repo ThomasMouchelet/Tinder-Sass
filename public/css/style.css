@@ -87,9 +87,11 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
   .footer .footer_column {
-    text-align: center; }
+    text-align: center;
+    width: calc(100%/5); }
     .footer .footer_column h3 {
       color: #ff7C7C; }
     .footer .footer_column ul {
@@ -100,5 +102,12 @@ body {
         .footer .footer_column ul li a {
           text-decoration: none;
           color: #565151; }
+
+@media screen and (max-width: 768px) {
+  .banner nav {
+    justify-content: center; }
+
+  .footer .footer_column {
+    width: calc(100%/3); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -141,9 +141,11 @@ body{
 .footer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     .footer_column{
         text-align: center;
+        width: calc(100%/5);
 
         h3{
             color: $pink;
@@ -162,5 +164,15 @@ body{
                 }
             }
         }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 768px){
+    .banner nav{
+        justify-content: center;
+    }
+    .footer .footer_column{
+        width: calc(100%/3);
     }
 }
