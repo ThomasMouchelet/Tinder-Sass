@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden; }
+  .banner video {
+    position: absolute;
+    z-index: -1;
+    min-width: 100vw;
+    min-height: 100vh; }
+  .banner nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 0;
+    font-size: 1em; }
+    .banner nav a {
+      color: #fff;
+      text-decoration: none; }
+    .banner nav > a {
+      border: 2px solid #fff;
+      border-radius: 8px;
+      padding: 8px;
+      height: 40px;
+      transition: all .3s ease-in-out; }
+      .banner nav > a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 8px; }
+    .banner nav ul {
+      border: 2px solid #fff;
+      border-radius: 8px;
+      padding: 8px;
+      height: 40px;
+      transition: all .3s ease-in-out;
+      margin: 0;
+      padding: 0;
+      margin-left: 10px; }
+      .banner nav ul:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 8px; }
+      .banner nav ul:hover li:not(.active) {
+        opacity: 1;
+        text-align: right; }
+      .banner nav ul li {
+        list-style: none;
+        overflow: hidden;
+        padding: 5px; }
+        .banner nav ul li img {
+          width: 20%; }
+        .banner nav ul li:not(.active) {
+          opacity: 0; }
+          .banner nav ul li:not(.active):hover a {
+            color: #565151; }
+        .banner nav ul li.active > a {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .banner nav ul li.active > a * {
+            margin: 0 5px; }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .intro .wrapper {
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 40px; }
+    .intro .wrapper img {
+      max-width: 100%; }
+  .intro .download-buttons {
+    text-align: center;
+    margin: 5% 0; }
+    .intro .download-buttons img {
+      width: 30%; }
+  .intro .arrow-down {
+    color: #fff;
+    font-size: 3em; }
+
+.footer {
+  display: flex;
+  justify-content: space-around; }
+  .footer .footer_column {
+    text-align: center; }
+    .footer .footer_column h3 {
+      color: #ff7C7C; }
+    .footer .footer_column ul {
+      padding: 0; }
+      .footer .footer_column ul li {
+        list-style: none;
+        padding: 5px 0; }
+        .footer .footer_column ul li a {
+          text-decoration: none;
+          color: #565151; }
+
+/*# sourceMappingURL=style.css.map */
